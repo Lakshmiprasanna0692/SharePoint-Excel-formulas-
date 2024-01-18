@@ -1,0 +1,7 @@
+=IF(ISBLANK([Column2]),0,TEXT([Column2]-[Column1],"hh"))
+
+=CONCATENATE(TEXT(HOUR([EndTime]-[StartTime]),"#"),":",TEXT(MINUTE([EndTime]-[StartTime]), "#")) 
+
+=TEXT(INT(([End Time]-[Start Time])*24),"0")&": "&TEXT(MINUTE([End Time]-[Start Time]),"0")
+
+=CONCATENATE(TEXT(HOUR([End Time]-[Start Time]),"#"),":",TEXT(MINUTE([End Time]-[Start Time]),"#"))
